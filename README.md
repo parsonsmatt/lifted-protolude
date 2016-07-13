@@ -1,7 +1,7 @@
-Protolude
+Protolude.Lifted
 =========
 
-[![Build Status](https://travis-ci.org/sdiehl/protolude.svg?branch=master)](https://travis-ci.org/sdiehl/protolude)
+[![Build Status](https://travis-ci.org/parsonsmatt/protolude.svg?branch=master)](https://travis-ci.org/parsonsmatt/protolude)
 [![Hackage](https://img.shields.io/hackage/v/protolude.svg)](https://hackage.haskell.org/package/protolude)
 
 A sensible starting Prelude for building custom Preludes.
@@ -44,20 +44,20 @@ Supports:
 Usage
 -----
 
-In your project simply disable the default Prelude and import Protolude.
+In your project simply disable the default Prelude and import Protolude.Lifted.
 
 ```haskell
 {-# LANGUAGE NoImplicitPrelude #-}
 
-import Protolude
+import Protolude.Lifted
 ```
 
-To try out standalone prelude at the interactive shell, from the Protolude
+To try out standalone prelude at the interactive shell, from the Protolude.Lifted
 project directory run.
 
 ```haskell
 $ stack exec ghci
-> import Protolude
+> import Protolude.Lifted
 ```
 
 Dependencies

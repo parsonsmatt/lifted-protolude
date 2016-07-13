@@ -5,7 +5,7 @@
 {-# LANGUAGE ExplicitNamespaces #-}
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
-module Protolude (
+module Protolude.Lifted (
   module X,
   module Base,
   identity,
@@ -329,21 +329,15 @@ import System.IO as X (
 import Control.Monad.ST as X
 
 -- Concurrency and Parallelism
-import Control.Exception as X hiding (
-    throw    -- Impure throw is forbidden.
-  , throwIO
-  , throwTo
-  , assert
-  , displayException
-  )
+import Control.Monad.Catch as X
 
 import qualified Control.Exception
 
 import Control.Monad.STM as X
-import Control.Concurrent as X hiding (
+import Control.Concurrent.Lifted as X hiding (
     throwTo
   )
-import Control.Concurrent.Async as X
+import Control.Concurrent.Async.Lifted as X
 
 import Foreign.Storable as X (Storable)
 
