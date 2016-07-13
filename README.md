@@ -1,10 +1,10 @@
 Protolude.Lifted
 =========
 
-[![Build Status](https://travis-ci.org/parsonsmatt/protolude.svg?branch=master)](https://travis-ci.org/parsonsmatt/protolude)
-[![Hackage](https://img.shields.io/hackage/v/protolude.svg)](https://hackage.haskell.org/package/protolude)
+[![Build Status](https://travis-ci.org/parsonsmatt/lifted-protolude.svg?branch=master)](https://travis-ci.org/parsonsmatt/lifted-protolude)
+[![Hackage](https://img.shields.io/hackage/v/lifted-protolude.svg)](https://hackage.haskell.org/package/lifted-protolude)
 
-A sensible starting Prelude for building custom Preludes.
+A sensible starting Prelude for building custom Preludes, with lifted async, base, and exceptions.
 
 Design points:
 
